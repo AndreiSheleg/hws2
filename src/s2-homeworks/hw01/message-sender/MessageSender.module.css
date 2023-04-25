@@ -1,43 +1,44 @@
 .sendForm {
     display: flex;
-    align-items: flex-start;
-    width: 100%;
     justify-content: space-between;
-    padding: 30px 0;
+    margin: 81px 70px 50px 70px;
 }
 
 .textarea {
-    resize: none;
-    width: 82%;
-    padding: 10px 20px 20px 20px;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    display: block;
+    width: 100%;
+    margin-right: 44px;
+    max-height: 40px;
+    padding: 8px 0 8px 24px;
     font-size: 14px;
-    transition: all 0.3s linear;
-    overflow: hidden;
-}
-
-.textarea:focus {
-    border-color: #0066cc;
-    outline: 0;
+    line-height: 17px;
+    border: none;
+    background: #F5F7FB;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 20px;
 }
 
 .button {
     width: 120px;
     height: 40px;
-    cursor: pointer;
-    border: 0;
-    background-color: #0066cc;
-    color: #fff;
+    background: #0066CC;
+    border: solid 1px #0066CC;
+    border-radius: 20px;
     font-weight: 600;
     font-size: 16px;
-    border-radius: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .button:hover {
-
+    background: rgba(0, 0, 0, 0);
+    color: #0066CC;
+    box-shadow: inset 0 0 0 3px #0066CC;
 }
-.button:active {
 
+.button:active {
+    background: #0066CC;
+    box-shadow: inset 0 0 0 3px #0066CC;
+    color: #FFFFFF;
 }
