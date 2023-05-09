@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Montserrat;
+}
+
 .greetingForm {
 }
 
 .inputAndButtonContainer {
+
 }
 
 .error {
@@ -23,9 +28,11 @@
 }
 
 .button:active {
+
 }
 
 .button:disabled {
+
 }
 
 .text {

@@ -1,9 +1,20 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #2F2E41;
+}
+
 .App {
     --header_height: 60px;
 }
 
 .hw {
-
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #2F2E41;
 }
 
 .hwTitle {
