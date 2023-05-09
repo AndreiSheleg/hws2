@@ -9,7 +9,7 @@ type GreetingContainerPropsType = {
 
 export const pureAddUser = (name: string, setError: (error: string)=>void, setName: (name: string) => void, addUserCallback: (name : string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-    if(name === '') {
+    if(name.trim() === '') {
         setError('Ошибка! Введите имя!')
         return
     }
@@ -18,7 +18,7 @@ export const pureAddUser = (name: string, setError: (error: string)=>void, setNa
 }
 
 export const pureOnBlur = (name: string, setError: (error: string)=>void) => { // если имя пустое - показать ошибку
-    if (name === '') {
+    if (name.trim() === '') {
         setError('Ошибка! Введите имя!')
     }
 }
@@ -43,7 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => { // need to fix any
         // Метод trim() удаляет пробельные символы с начала и конца строки
-        const nameWithoutSpace = event.currentTarget.value.trim() // need to fix
+        const nameWithoutSpace = event.currentTarget.value // need to fix
         if (nameWithoutSpace !== '') { // тут проверка на пустую строку имени
             setName(nameWithoutSpace)
             error && setError('') // тут обнуляем ошибку, если она была
