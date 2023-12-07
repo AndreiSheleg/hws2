@@ -1,13 +1,17 @@
 .button {
+    background-color: #00cc22;
 }
 
 .disabled {
+    background-color: #ff00e8;
 }
 
 .secondary {
+    background-color: #ffc600;
 }
 
 .default {
+    background-color: #00f4ff;
 }
 
 .red {
