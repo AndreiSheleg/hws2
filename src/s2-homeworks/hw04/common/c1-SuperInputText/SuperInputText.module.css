@@ -2,21 +2,35 @@
 }
 
 .input {
+    padding: 5px;
+    display: flex;
+    width: 372px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
+
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
 }
 
 .superInput {
 }
 
 .errorInput {
-
+    border-radius: 5px;
+    border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
 }
 
 .error {
-    color: red
+    color: #CC1439;
+    font-size: 10px;
+    font-weight: 400;
 }
