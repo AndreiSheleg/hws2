@@ -10,7 +10,9 @@
 
     background: #fff;
 }
-
+.active {
+    color: red
+}
 .sidebar.open {
     position: fixed;
     transition: 0.2s ease-out;
