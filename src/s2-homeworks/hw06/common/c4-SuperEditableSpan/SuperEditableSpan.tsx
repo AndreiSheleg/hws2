@@ -40,26 +40,29 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const {children, onDoubleClick, className, defaultText, ...restSpanProps} =
     spanProps || {}
 
+    // inline styles (figma plugin)
     const onEnterCallback = () => {
-        // выключить editMode при нажатии Enter // делают студенты
+        // выключить editMode при нажатии Enter // делают студенты - сделал?
+        setEditMode(false);
 
         onEnter?.()
     }
     const onBlurCallback = (e: React.FocusEvent<HTMLInputElement>) => {
-        // выключить editMode при нажатии за пределами инпута // делают студенты
+        // выключить editMode при нажатии за пределами инпута // делают студенты - сделал?
+        setEditMode(false);
 
         onBlur?.(e)
     }
     const onDoubleClickCallBack = (
         e: React.MouseEvent<HTMLSpanElement, MouseEvent>
     ) => {
-        // включить editMode при двойном клике // делают студенты
+        // включить editMode при двойном клике // делают студенты - сделал?
+        setEditMode(true);
 
         onDoubleClick?.(e)
     }
 
-    const spanClassName = s.span
-        + (className ? ' ' + className : '')
+    const spanClassName = s.span + (className ? ' ' + className : '')
 
     return (
         <>
